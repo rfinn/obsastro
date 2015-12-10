@@ -1,0 +1,115 @@
+#K IRAF       = NOAO/IRAFV2.16          version    %-23s     
+#K USER       = rfinn                   name       %-23s     
+#K HOST       = s60118.siena.edu        computer   %-23s     
+#K DATE       = 2015-12-10              yyyy-mm-dd %-23s     
+#K TIME       = 15:10:49                hh:mm:ss   %-23s     
+#K PACKAGE    = apphot                  name       %-23s     
+#K TASK       = phot                    name       %-23s     
+#
+#K SCALE      = 1.                      units      %-23.7g   
+#K FWHMPSF    = 2.5                     scaleunit  %-23.7g   
+#K EMISSION   = yes                     switch     %-23b     
+#K DATAMIN    = INDEF                   counts     %-23.7g   
+#K DATAMAX    = INDEF                   counts     %-23.7g   
+#K EXPOSURE   = ""                      keyword    %-23s     
+#K AIRMASS    = ""                      keyword    %-23s     
+#K FILTER     = ""                      keyword    %-23s     
+#K OBSTIME    = ""                      keyword    %-23s     
+#
+#K NOISE      = poisson                 model      %-23s     
+#K SIGMA      = INDEF                   counts     %-23.7g   
+#K GAIN       = ""                      keyword    %-23s     
+#K EPADU      = 1.                      e-/adu     %-23.7g   
+#K CCDREAD    = ""                      keyword    %-23s     
+#K READNOISE  = 0.                      e-         %-23.7g   
+#
+#K CALGORITHM = centroid                algorithm  %-23s     
+#K CBOXWIDTH  = 10.                     scaleunit  %-23.7g   
+#K CTHRESHOLD = 0.                      sigma      %-23.7g   
+#K MINSNRATIO = 1.                      number     %-23.7g   
+#K CMAXITER   = 10                      number     %-23d     
+#K MAXSHIFT   = 1.                      scaleunit  %-23.7g   
+#K CLEAN      = no                      switch     %-23b     
+#K RCLEAN     = 1.                      scaleunit  %-23.7g   
+#K RCLIP      = 2.                      scaleunit  %-23.7g   
+#K KCLEAN     = 3.                      sigma      %-23.7g   
+#
+#K SALGORITHM = centroid                algorithm  %-23s     
+#K ANNULUS    = 25.                     scaleunit  %-23.7g   
+#K DANNULUS   = 5.                      scaleunit  %-23.7g   
+#K SKYVALUE   = 0.                      counts     %-23.7g   
+#K KHIST      = 3.                      sigma      %-23.7g   
+#K BINSIZE    = 0.1                     sigma      %-23.7g   
+#K SMOOTH     = yes                     switch     %-23b     
+#K SMAXITER   = 10                      number     %-23d     
+#K SLOCLIP    = 0.                      percent    %-23.7g   
+#K SHICLIP    = 0.                      percent    %-23.7g   
+#K SNREJECT   = 50                      number     %-23d     
+#K SLOREJECT  = 3.                      sigma      %-23.7g   
+#K SHIREJECT  = 3.                      sigma      %-23.7g   
+#K RGROW      = 0.                      scaleunit  %-23.7g   
+#
+#K WEIGHTING  = constant                model      %-23s     
+#K APERTURES  = 15                      scaleunit  %-23s     
+#K ZMAG       = 25.                     zeropoint  %-23.7g   
+#
+#N IMAGE               XINIT     YINIT     ID    COORDS                 LID    \
+#U imagename           pixels    pixels    ##    filename               ##     \
+#F %-23s               %-10.3f   %-10.3f   %-6d  %-23s                  %-6d    
+#
+#N XCENTER    YCENTER    XSHIFT  YSHIFT  XERR    YERR            CIER CERROR   \
+#U pixels     pixels     pixels  pixels  pixels  pixels          ##   cerrors  \
+#F %-14.3f    %-11.3f    %-8.3f  %-8.3f  %-8.3f  %-15.3f         %-5d %-9s      
+#
+#N MSKY           STDEV          SSKEW          NSKY   NSREJ     SIER SERROR   \
+#U counts         counts         counts         npix   npix      ##   serrors  \
+#F %-18.7g        %-15.7g        %-15.7g        %-7d   %-9d      %-5d %-9s      
+#
+#N ITIME          XAIRMASS       IFILTER                OTIME                  \
+#U timeunit       number         name                   timeunit               \
+#F %-18.7g        %-15.7g        %-23s                  %-23s                   
+#
+#N RAPERT   SUM           AREA       FLUX          MAG    MERR   PIER PERROR   \
+#U scale    counts        pixels     counts        mag    mag    ##   perrors  \
+#F %-12.2f  %-14.7g       %-11.7g    %-14.7g       %-7.3f %-6.3f %-5d %-9s      
+#
+rVestaRband.fits       674.160   348.180   1     ZPositions             1      \
+   673.805    346.210    -0.355  -1.970  0.041   0.054          107  BigShift  \
+   279.1791       7.554087       -1.590112      858    5        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    201103.3      707.1452   3683.211      16.084 0.082 0    NoError    
+rVestaRband.fits       529.490   411.150   2     ZPositions             2      \
+   530.396    410.405    0.906   -0.745  0.037   0.054          0    NoError   \
+   278.2657       8.248227       4.1393         856    10       0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    200159.6      706.9034   3452.676      16.155 0.095 0    NoError    
+rVestaRband.fits       559.580   173.220   3     ZPositions             3      \
+   559.575    173.225    -0.005  0.005   0.046   0.055          0    NoError   \
+   277.6462       6.959372       2.786746       864    2        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    200501.5      707.1924   4152.18       15.954 0.067 0    NoError    
+rVestaRband.fits       766.140   616.970   4     ZPositions             4      \
+   768.567    614.000    2.427   -2.970  0.031   0.046          107  BigShift  \
+   277.0237       9.267191       3.416188       847    17       0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    201550.4      707.5089   5553.616      15.639 0.067 0    NoError    
+rVestaRband.fits       804.520   541.680   5     ZPositions             5      \
+   806.187    538.349    1.667   -3.331  0.035   0.047          107  BigShift  \
+   278.1993       8.576698       3.571538       860    5        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    201055.8      707.2022   4312.601      15.913 0.079 0    NoError    
+rVestaRband.fits       200.530   354.560   6     ZPositions             6      \
+   200.629    356.975    0.099   2.415   0.018   0.028          107  BigShift  \
+   277.2681       7.916861       -3.243879      860    3        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    212328.3      707.3271   16209.04      14.476 0.021 0    NoError    
+rVestaRband.fits       209.820   194.550   7     ZPositions             7      \
+   208.524    197.388    -1.296  2.838   0.043   0.065          107  BigShift  \
+   277.2119       7.893132       2.882952       859    4        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    198043.2      706.8082   2107.566      16.691 0.148 0    NoError    
+rVestaRband.fits       257.660   298.650   8     ZPositions             8      \
+   257.556    297.990    -0.104  -0.660  0.003   0.005          0    NoError   \
+   278.7696       7.530046       -3.031089      859    4        0    NoError   \
+   1.             INDEF          INDEF                  INDEF                  \
+   15.00    846014.4      707.5339   648775.5      10.470 0.001 0    NoError    
