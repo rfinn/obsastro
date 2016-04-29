@@ -1,0 +1,27 @@
+# Fri 16:05:02 29-Apr-2016
+begin	aperture HeCalib01 1 382. 300.3592
+	image	HeCalib01
+	aperture	1
+	beam	1
+	center	382. 300.3592
+	low	-381. -5.
+	high	383. 5.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage -3
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	5
+		2.
+		1.
+		1.
+		765.
+		0.
+

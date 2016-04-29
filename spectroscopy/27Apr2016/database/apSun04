@@ -1,0 +1,27 @@
+# Fri 15:29:26 29-Apr-2016
+begin	aperture Sun04 1 382. 236.9585
+	image	Sun04
+	aperture	1
+	beam	1
+	center	382. 236.9585
+	low	-381. -5.
+	high	383. 5.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage -3
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	5
+		2.
+		1.
+		1.
+		765.
+		0.
+
